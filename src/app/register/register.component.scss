@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+.background-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: url("../../../public/login-background.jpg") no-repeat center
+    center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  width: 80%; /* Adjust as needed */
+  height: 80%; /* Adjust as needed */
+  background: rgba(236, 234, 234, 0.5); /* Semi-transparent overlay */
+  border-radius: 10px;
+}
+
+.right-column {
+  flex: 2 0 0;
+  display: flex;
+  flex-direction: column;
+  //   width: 60%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+}
+.col-container {
+  flex: 1;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-gender {
+  padding-left: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.section-css {
+  color: white;
+}
+h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: black;
+}
+h6 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.remember-me input {
+  margin-right: 10px;
+}
+
+.input-group {
+  width: 100%; /* Ensures the input group takes up the full width of its container */
+  max-width: 500px; /* Sets a maximum width */
+  margin: 0 auto; /* Centers the input group horizontally */
+}
+
+mat-form-field {
+  width: 100%; /* Ensures the form field takes up the full width of its container */
+  max-width: 500px; /* Sets a maximum width */
+  margin: 0 auto; /* Centers the form field horizontally */
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background: rgba(236, 234, 234, 0.5); /* Semi-transparent overlay */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin: 1px;
+}
+
+.login-btn:hover {
+  background: rgba(179, 74, 13, 0.267); /* Semi-transparent overlay */
+}
+
+.facebook-btn:hover {
+  background: #2d4373;
+}
+
+.left-column {
+  //   width: 40%;
+  flex: 1 0 0;
+
+  background: url("../../../public/login-left.png") no-repeat center
+    center/cover;
+  background-size: cover;
+  padding: 20px;
+  /* Additional styling for the right column */
+}

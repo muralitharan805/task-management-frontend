@@ -1,0 +1,46 @@
+<div class="background-container">
+  <div class="content">
+    <div class="left-column">
+      <div class="form-container">
+        <h2>Login</h2>
+        <h6>Does not have an account yet? <a href="/sign-up">Sign Up</a></h6>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+          <div class="input-group">
+            <mat-form-field>
+              <mat-label>Email Address</mat-label>
+              <input matInput formControlName="userName" />
+            </mat-form-field>
+          </div>
+          <div class="input-group">
+            <mat-form-field>
+              <mat-label>Password</mat-label>
+              <input matInput type="password" formControlName="password" />
+              <mat-error
+                *ngIf="
+                  this.loginForm.get('password')?.hasError('wrongCredentials')
+                "
+                >Invalid user name or password</mat-error
+              >
+            </mat-form-field>
+          </div>
+          <div class="remember-me">
+            <input type="checkbox" id="remember" name="remember" />
+            <label for="remember">Remember me</label>
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+          <hr />
+          <div class="social-login">
+            <button type="button" class="google-btn">Login with Google</button>
+            <button type="button" class="facebook-btn">
+              Login with Facebook
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="right-column">
+      <!-- Content for the 60% width column -->
+    </div>
+  </div>
+</div>
